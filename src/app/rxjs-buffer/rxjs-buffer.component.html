@@ -1,0 +1,11 @@
+<!-- 'buffer<T>(closingNotifier: Observable<any>): Observable<T[]>' -->
+  <pre>
+    The gist: Collect output values until something happens then hand them over. Repeat...
+ </pre>
+
+
+<h1>Buffered Data by clicking the document</h1>
+<h6 *ngIf="bufferData">Buffered Data: {{bufferData}}</h6>
+<div *ngFor="let data of bufferedData">
+  Data : {{data}}
+</div>
