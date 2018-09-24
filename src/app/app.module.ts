@@ -22,6 +22,8 @@ import { RxjsBufferToggleComponent } from './rxjs-buffer-toggle/rxjs-buffer-togg
 import { RxjsBufferWhenComponent } from './rxjs-buffer-when/rxjs-buffer-when.component';
 import { RxjsCombineAllComponent } from './rxjs-combine-all/rxjs-combine-all.component';
 import { RxjsCombineLatestComponent } from './rxjs-combine-latest/rxjs-combine-latest.component';
+import { RxjsConcatComponent } from './rxjs-concat/rxjs-concat.component';
+import { RxjsConcatallComponent } from './rxjs-concatall/rxjs-concatall.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { RxjsCombineLatestComponent } from './rxjs-combine-latest/rxjs-combine-l
     RxjsBufferToggleComponent,
     RxjsBufferWhenComponent,
     RxjsCombineAllComponent,
-    RxjsCombineLatestComponent
+    RxjsCombineLatestComponent,
+    RxjsConcatComponent,
+    RxjsConcatallComponent
   ],
   imports: [
     BrowserModule,
