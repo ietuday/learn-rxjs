@@ -45,6 +45,7 @@ import { RxjsLastComponent } from './rxjs-last/rxjs-last.component';
 import { RxjsMapComponent } from './rxjs-map/rxjs-map.component';
 import { RxjsMapToComponent } from './rxjs-map-to/rxjs-map-to.component';
 import { RxjsMergeComponent } from './rxjs-merge/rxjs-merge.component';
+import { RxjsMergeMapComponent } from './rxjs-merge-map/rxjs-merge-map.component';
 
 @NgModule({
   declarations: [
@@ -78,7 +79,8 @@ import { RxjsMergeComponent } from './rxjs-merge/rxjs-merge.component';
     RxjsLastComponent,
     RxjsMapComponent,
     RxjsMapToComponent,
-    RxjsMergeComponent
+    RxjsMergeComponent,
+    RxjsMergeMapComponent
   ],
   imports: [
     BrowserModule,
