@@ -28,6 +28,7 @@ import { RxjsConcatMapComponent } from './rxjs-concat-map/rxjs-concat-map.compon
 import { RxjsConcatMapToComponent } from './rxjs-concat-map-to/rxjs-concat-map-to.component';
 import { RxjsCountComponent } from './rxjs-count/rxjs-count.component';
 import { RxjsDebounceComponent } from './rxjs-debounce/rxjs-debounce.component';
+import { RxjsDebounceTimeComponent } from './rxjs-debounce-time/rxjs-debounce-time.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { RxjsDebounceComponent } from './rxjs-debounce/rxjs-debounce.component';
     RxjsConcatMapComponent,
     RxjsConcatMapToComponent,
     RxjsCountComponent,
-    RxjsDebounceComponent
+    RxjsDebounceComponent,
+    RxjsDebounceTimeComponent
   ],
   imports: [
     BrowserModule,
