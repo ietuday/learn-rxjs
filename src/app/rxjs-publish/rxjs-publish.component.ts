@@ -44,7 +44,7 @@ export class RxjsPublishComponent implements OnInit {
 
     //call connect after 5 seconds, causing source to begin emitting items
     setTimeout(() => {
-      example.connect();
+      // example.connect();
     }, 5000);
 
   }
