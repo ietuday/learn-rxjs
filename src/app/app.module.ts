@@ -39,6 +39,7 @@ import { RxjsEveryComponent } from './rxjs-every/rxjs-every.component';
 import { RxjsExpandComponent } from './rxjs-expand/rxjs-expand.component';
 import { RxjsFilterComponent } from './rxjs-filter/rxjs-filter.component';
 import { RxjsFirstComponent } from './rxjs-first/rxjs-first.component';
+import { RxjsGroupByComponent } from './rxjs-group-by/rxjs-group-by.component';
 
 @NgModule({
   declarations: [
@@ -66,7 +67,8 @@ import { RxjsFirstComponent } from './rxjs-first/rxjs-first.component';
     RxjsEveryComponent,
     RxjsExpandComponent,
     RxjsFilterComponent,
-    RxjsFirstComponent
+    RxjsFirstComponent,
+    RxjsGroupByComponent
   ],
   imports: [
     BrowserModule,
