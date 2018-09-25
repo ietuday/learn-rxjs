@@ -36,6 +36,7 @@ import { RxjsDematerializeComponent } from './rxjs-dematerialize/rxjs-dematerial
 import { RxjsDistinctUntilChangedComponent } from './rxjs-distinct-until-changed/rxjs-distinct-until-changed.component';
 import { RxjsDoComponent } from './rxjs-do/rxjs-do.component';
 import { RxjsEveryComponent } from './rxjs-every/rxjs-every.component';
+import { RxjsExpandComponent } from './rxjs-expand/rxjs-expand.component';
 
 @NgModule({
   declarations: [
@@ -60,7 +61,8 @@ import { RxjsEveryComponent } from './rxjs-every/rxjs-every.component';
     RxjsDematerializeComponent,
     RxjsDistinctUntilChangedComponent,
     RxjsDoComponent,
-    RxjsEveryComponent
+    RxjsEveryComponent,
+    RxjsExpandComponent
   ],
   imports: [
     BrowserModule,
