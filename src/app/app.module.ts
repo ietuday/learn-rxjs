@@ -25,6 +25,7 @@ import { RxjsCombineLatestComponent } from './rxjs-combine-latest/rxjs-combine-l
 import { RxjsConcatComponent } from './rxjs-concat/rxjs-concat.component';
 import { RxjsConcatallComponent } from './rxjs-concatall/rxjs-concatall.component';
 import { RxjsConcatMapComponent } from './rxjs-concat-map/rxjs-concat-map.component';
+import { RxjsConcatMapToComponent } from './rxjs-concat-map-to/rxjs-concat-map-to.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { RxjsConcatMapComponent } from './rxjs-concat-map/rxjs-concat-map.compon
     RxjsCombineLatestComponent,
     RxjsConcatComponent,
     RxjsConcatallComponent,
-    RxjsConcatMapComponent
+    RxjsConcatMapComponent,
+    RxjsConcatMapToComponent
   ],
   imports: [
     BrowserModule,
