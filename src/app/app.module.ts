@@ -38,6 +38,7 @@ import { RxjsDoComponent } from './rxjs-do/rxjs-do.component';
 import { RxjsEveryComponent } from './rxjs-every/rxjs-every.component';
 import { RxjsExpandComponent } from './rxjs-expand/rxjs-expand.component';
 import { RxjsFilterComponent } from './rxjs-filter/rxjs-filter.component';
+import { RxjsFirstComponent } from './rxjs-first/rxjs-first.component';
 
 @NgModule({
   declarations: [
@@ -64,7 +65,8 @@ import { RxjsFilterComponent } from './rxjs-filter/rxjs-filter.component';
     RxjsDoComponent,
     RxjsEveryComponent,
     RxjsExpandComponent,
-    RxjsFilterComponent
+    RxjsFilterComponent,
+    RxjsFirstComponent
   ],
   imports: [
     BrowserModule,
