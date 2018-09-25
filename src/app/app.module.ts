@@ -31,6 +31,7 @@ import { RxjsDebounceComponent } from './rxjs-debounce/rxjs-debounce.component';
 import { RxjsDebounceTimeComponent } from './rxjs-debounce-time/rxjs-debounce-time.component';
 import { RxjsDefaultIfEmptyComponent } from './rxjs-default-if-empty/rxjs-default-if-empty.component';
 import { RxjsDelayComponent } from './rxjs-delay/rxjs-delay.component';
+import { RxjsDelayWhenComponent } from './rxjs-delay-when/rxjs-delay-when.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +51,8 @@ import { RxjsDelayComponent } from './rxjs-delay/rxjs-delay.component';
     RxjsDebounceComponent,
     RxjsDebounceTimeComponent,
     RxjsDefaultIfEmptyComponent,
-    RxjsDelayComponent
+    RxjsDelayComponent,
+    RxjsDelayWhenComponent
   ],
   imports: [
     BrowserModule,
