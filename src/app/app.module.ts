@@ -29,6 +29,7 @@ import { RxjsConcatMapToComponent } from './rxjs-concat-map-to/rxjs-concat-map-t
 import { RxjsCountComponent } from './rxjs-count/rxjs-count.component';
 import { RxjsDebounceComponent } from './rxjs-debounce/rxjs-debounce.component';
 import { RxjsDebounceTimeComponent } from './rxjs-debounce-time/rxjs-debounce-time.component';
+import { RxjsDefaultIfEmptyComponent } from './rxjs-default-if-empty/rxjs-default-if-empty.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { RxjsDebounceTimeComponent } from './rxjs-debounce-time/rxjs-debounce-ti
     RxjsConcatMapToComponent,
     RxjsCountComponent,
     RxjsDebounceComponent,
-    RxjsDebounceTimeComponent
+    RxjsDebounceTimeComponent,
+    RxjsDefaultIfEmptyComponent
   ],
   imports: [
     BrowserModule,
