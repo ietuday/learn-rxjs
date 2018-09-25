@@ -40,6 +40,7 @@ import { RxjsExpandComponent } from './rxjs-expand/rxjs-expand.component';
 import { RxjsFilterComponent } from './rxjs-filter/rxjs-filter.component';
 import { RxjsFirstComponent } from './rxjs-first/rxjs-first.component';
 import { RxjsGroupByComponent } from './rxjs-group-by/rxjs-group-by.component';
+import { RxjsIgnoreElementsComponent } from './rxjs-ignore-elements/rxjs-ignore-elements.component';
 
 @NgModule({
   declarations: [
@@ -68,7 +69,8 @@ import { RxjsGroupByComponent } from './rxjs-group-by/rxjs-group-by.component';
     RxjsExpandComponent,
     RxjsFilterComponent,
     RxjsFirstComponent,
-    RxjsGroupByComponent
+    RxjsGroupByComponent,
+    RxjsIgnoreElementsComponent
   ],
   imports: [
     BrowserModule,
