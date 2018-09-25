@@ -30,6 +30,7 @@ import { RxjsCountComponent } from './rxjs-count/rxjs-count.component';
 import { RxjsDebounceComponent } from './rxjs-debounce/rxjs-debounce.component';
 import { RxjsDebounceTimeComponent } from './rxjs-debounce-time/rxjs-debounce-time.component';
 import { RxjsDefaultIfEmptyComponent } from './rxjs-default-if-empty/rxjs-default-if-empty.component';
+import { RxjsDelayComponent } from './rxjs-delay/rxjs-delay.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +49,8 @@ import { RxjsDefaultIfEmptyComponent } from './rxjs-default-if-empty/rxjs-defaul
     RxjsCountComponent,
     RxjsDebounceComponent,
     RxjsDebounceTimeComponent,
-    RxjsDefaultIfEmptyComponent
+    RxjsDefaultIfEmptyComponent,
+    RxjsDelayComponent
   ],
   imports: [
     BrowserModule,
