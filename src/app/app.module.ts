@@ -34,6 +34,7 @@ import { RxjsDelayComponent } from './rxjs-delay/rxjs-delay.component';
 import { RxjsDelayWhenComponent } from './rxjs-delay-when/rxjs-delay-when.component';
 import { RxjsDematerializeComponent } from './rxjs-dematerialize/rxjs-dematerialize.component';
 import { RxjsDistinctUntilChangedComponent } from './rxjs-distinct-until-changed/rxjs-distinct-until-changed.component';
+import { RxjsDoComponent } from './rxjs-do/rxjs-do.component';
 
 @NgModule({
   declarations: [
@@ -56,7 +57,8 @@ import { RxjsDistinctUntilChangedComponent } from './rxjs-distinct-until-changed
     RxjsDelayComponent,
     RxjsDelayWhenComponent,
     RxjsDematerializeComponent,
-    RxjsDistinctUntilChangedComponent
+    RxjsDistinctUntilChangedComponent,
+    RxjsDoComponent
   ],
   imports: [
     BrowserModule,
