@@ -52,6 +52,8 @@ import { RxjsPublishComponent } from './rxjs-publish/rxjs-publish.component';
 import { RxjsRaceComponent } from './rxjs-race/rxjs-race.component';
 import { RxjsRepeatComponent } from './rxjs-repeat/rxjs-repeat.component';
 import { RxjsRetryComponent } from './rxjs-retry/rxjs-retry.component';
+import { RxjsRetryWhenComponent } from './rxjs-retry-when/rxjs-retry-when.component';
+import { RxjsSampleComponent } from './rxjs-sample/rxjs-sample.component';
 
 @NgModule({
   declarations: [
@@ -92,7 +94,9 @@ import { RxjsRetryComponent } from './rxjs-retry/rxjs-retry.component';
     RxjsPublishComponent,
     RxjsRaceComponent,
     RxjsRepeatComponent,
-    RxjsRetryComponent
+    RxjsRetryComponent,
+    RxjsRetryWhenComponent,
+    RxjsSampleComponent
   ],
   imports: [
     BrowserModule,
