@@ -29,7 +29,7 @@ export class RxjsDematerializeComponent implements OnInit {
     const subscription = source.subscribe({
       next: val => console.log(`NEXT VALUE: ${val}`),
       error: val => console.log(`ERROR VALUE: ${val}`)
-    });
+    });      
   }
 
 }
