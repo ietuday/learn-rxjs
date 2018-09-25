@@ -50,6 +50,7 @@ import { RxjsPartitionComponent } from './rxjs-partition/rxjs-partition.componen
 import { RxjsPluckComponent } from './rxjs-pluck/rxjs-pluck.component';
 import { RxjsPublishComponent } from './rxjs-publish/rxjs-publish.component';
 import { RxjsRaceComponent } from './rxjs-race/rxjs-race.component';
+import { RxjsRepeatComponent } from './rxjs-repeat/rxjs-repeat.component';
 
 @NgModule({
   declarations: [
@@ -88,7 +89,8 @@ import { RxjsRaceComponent } from './rxjs-race/rxjs-race.component';
     RxjsPartitionComponent,
     RxjsPluckComponent,
     RxjsPublishComponent,
-    RxjsRaceComponent
+    RxjsRaceComponent,
+    RxjsRepeatComponent
   ],
   imports: [
     BrowserModule,
