@@ -51,6 +51,7 @@ import { RxjsPluckComponent } from './rxjs-pluck/rxjs-pluck.component';
 import { RxjsPublishComponent } from './rxjs-publish/rxjs-publish.component';
 import { RxjsRaceComponent } from './rxjs-race/rxjs-race.component';
 import { RxjsRepeatComponent } from './rxjs-repeat/rxjs-repeat.component';
+import { RxjsRetryComponent } from './rxjs-retry/rxjs-retry.component';
 
 @NgModule({
   declarations: [
@@ -90,7 +91,8 @@ import { RxjsRepeatComponent } from './rxjs-repeat/rxjs-repeat.component';
     RxjsPluckComponent,
     RxjsPublishComponent,
     RxjsRaceComponent,
-    RxjsRepeatComponent
+    RxjsRepeatComponent,
+    RxjsRetryComponent
   ],
   imports: [
     BrowserModule,
