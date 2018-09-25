@@ -46,6 +46,7 @@ import { RxjsMapComponent } from './rxjs-map/rxjs-map.component';
 import { RxjsMapToComponent } from './rxjs-map-to/rxjs-map-to.component';
 import { RxjsMergeComponent } from './rxjs-merge/rxjs-merge.component';
 import { RxjsMergeMapComponent } from './rxjs-merge-map/rxjs-merge-map.component';
+import { RxjsPartitionComponent } from './rxjs-partition/rxjs-partition.component';
 
 @NgModule({
   declarations: [
@@ -80,7 +81,8 @@ import { RxjsMergeMapComponent } from './rxjs-merge-map/rxjs-merge-map.component
     RxjsMapComponent,
     RxjsMapToComponent,
     RxjsMergeComponent,
-    RxjsMergeMapComponent
+    RxjsMergeMapComponent,
+    RxjsPartitionComponent
   ],
   imports: [
     BrowserModule,
