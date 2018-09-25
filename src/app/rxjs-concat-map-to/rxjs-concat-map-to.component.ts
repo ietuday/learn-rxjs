@@ -19,10 +19,10 @@ export class RxjsConcatMapToComponent implements OnInit {
     const myInterval = interval(2000);
     const message = of('Second(s) elapsed!');
     //when interval emits, subscribe to message until complete, merge for result
-    const example = interval.pipe(concatMapTo(message, (time, msg) => `${time} ${msg}`));
+    // const example = interval.pipe(concatMapTo(message, (time, msg) => `${time} ${msg}`));
     //log values
     //output: '0 Second(s) elapsed', '1 Second(s) elapsed'
-    const subscribe = example.subscribe(val => console.log(val));
+    // const subscribe = example.subscribe(val => console.log(val));
 
     //emit value every second for 5 seconds
     const basicTimer = interval(1000).pipe(take(5));
@@ -33,10 +33,10 @@ export class RxjsConcatMapToComponent implements OnInit {
   (interval emits every 1 second, basicTimer completes every 5)
 */
     //basicTimer will complete after 5 seconds, emitting 0,1,2,3,4
-    const exampleTwo = interval
-      .pipe(concatMapTo(basicTimer,
-        (firstInterval, secondInterval) => `${firstInterval} ${secondInterval}`
-      ));
+    // const exampleTwo = interval
+    //   .pipe(concatMapTo(basicTimer,
+    //     (firstInterval, secondInterval) => `${firstInterval} ${secondInterval}`
+    //   ));
     /*
     output: 0 0
             0 1
@@ -48,7 +48,7 @@ export class RxjsConcatMapToComponent implements OnInit {
             continued...
             
     */
-    const subscribeTwo = exampleTwo.subscribe(val => console.log(val));
+    // const subscribeTwo = exampleTwo.subscribe(val => console.log(val));
   }
 
 }
