@@ -28,8 +28,11 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ##Important Rxjs Links 
 
-[Officail Docs]
+[Officail Docs(rx6)]
 (http://reactivex.io/rxjs/manual/index.html)
+
+[Officail Docs(rx5)]
+(http://reactivex-rxjs5.surge.sh/)
 
 [RxJS 5 Operators By Example]
 (https://gist.github.com/btroncone/d6cf141d6f2c00dc6b35)
