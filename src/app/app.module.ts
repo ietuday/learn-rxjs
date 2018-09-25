@@ -33,6 +33,7 @@ import { RxjsDefaultIfEmptyComponent } from './rxjs-default-if-empty/rxjs-defaul
 import { RxjsDelayComponent } from './rxjs-delay/rxjs-delay.component';
 import { RxjsDelayWhenComponent } from './rxjs-delay-when/rxjs-delay-when.component';
 import { RxjsDematerializeComponent } from './rxjs-dematerialize/rxjs-dematerialize.component';
+import { RxjsDistinctUntilChangedComponent } from './rxjs-distinct-until-changed/rxjs-distinct-until-changed.component';
 
 @NgModule({
   declarations: [
@@ -54,7 +55,8 @@ import { RxjsDematerializeComponent } from './rxjs-dematerialize/rxjs-dematerial
     RxjsDefaultIfEmptyComponent,
     RxjsDelayComponent,
     RxjsDelayWhenComponent,
-    RxjsDematerializeComponent
+    RxjsDematerializeComponent,
+    RxjsDistinctUntilChangedComponent
   ],
   imports: [
     BrowserModule,
