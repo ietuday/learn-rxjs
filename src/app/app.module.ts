@@ -43,6 +43,7 @@ import { RxjsGroupByComponent } from './rxjs-group-by/rxjs-group-by.component';
 import { RxjsIgnoreElementsComponent } from './rxjs-ignore-elements/rxjs-ignore-elements.component';
 import { RxjsLastComponent } from './rxjs-last/rxjs-last.component';
 import { RxjsMapComponent } from './rxjs-map/rxjs-map.component';
+import { RxjsMapToComponent } from './rxjs-map-to/rxjs-map-to.component';
 
 @NgModule({
   declarations: [
@@ -74,7 +75,8 @@ import { RxjsMapComponent } from './rxjs-map/rxjs-map.component';
     RxjsGroupByComponent,
     RxjsIgnoreElementsComponent,
     RxjsLastComponent,
-    RxjsMapComponent
+    RxjsMapComponent,
+    RxjsMapToComponent
   ],
   imports: [
     BrowserModule,
