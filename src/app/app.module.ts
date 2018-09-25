@@ -44,6 +44,7 @@ import { RxjsIgnoreElementsComponent } from './rxjs-ignore-elements/rxjs-ignore-
 import { RxjsLastComponent } from './rxjs-last/rxjs-last.component';
 import { RxjsMapComponent } from './rxjs-map/rxjs-map.component';
 import { RxjsMapToComponent } from './rxjs-map-to/rxjs-map-to.component';
+import { RxjsMergeComponent } from './rxjs-merge/rxjs-merge.component';
 
 @NgModule({
   declarations: [
@@ -76,7 +77,8 @@ import { RxjsMapToComponent } from './rxjs-map-to/rxjs-map-to.component';
     RxjsIgnoreElementsComponent,
     RxjsLastComponent,
     RxjsMapComponent,
-    RxjsMapToComponent
+    RxjsMapToComponent,
+    RxjsMergeComponent
   ],
   imports: [
     BrowserModule,
