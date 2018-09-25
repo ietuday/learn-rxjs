@@ -47,6 +47,9 @@ import { RxjsMapToComponent } from './rxjs-map-to/rxjs-map-to.component';
 import { RxjsMergeComponent } from './rxjs-merge/rxjs-merge.component';
 import { RxjsMergeMapComponent } from './rxjs-merge-map/rxjs-merge-map.component';
 import { RxjsPartitionComponent } from './rxjs-partition/rxjs-partition.component';
+import { RxjsPluckComponent } from './rxjs-pluck/rxjs-pluck.component';
+import { RxjsPublishComponent } from './rxjs-publish/rxjs-publish.component';
+import { RxjsRaceComponent } from './rxjs-race/rxjs-race.component';
 
 @NgModule({
   declarations: [
@@ -82,7 +85,10 @@ import { RxjsPartitionComponent } from './rxjs-partition/rxjs-partition.componen
     RxjsMapToComponent,
     RxjsMergeComponent,
     RxjsMergeMapComponent,
-    RxjsPartitionComponent
+    RxjsPartitionComponent,
+    RxjsPluckComponent,
+    RxjsPublishComponent,
+    RxjsRaceComponent
   ],
   imports: [
     BrowserModule,
