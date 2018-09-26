@@ -71,6 +71,7 @@ import { RxjsZipComponent } from './rxjs-zip/rxjs-zip.component';
 import { RxjsObservableComponent } from './rxjs-observable/rxjs-observable.component';
 import { RxjsSubscriptionComponent } from './rxjs-subscription/rxjs-subscription.component';
 import { RxjsSubjectComponent } from './rxjs-subject/rxjs-subject.component';
+import { RxjsBehaviourSubjectComponent } from './rxjs-behaviour-subject/rxjs-behaviour-subject.component';
 
 @NgModule({
   declarations: [
@@ -130,7 +131,8 @@ import { RxjsSubjectComponent } from './rxjs-subject/rxjs-subject.component';
     RxjsZipComponent,
     RxjsObservableComponent,
     RxjsSubscriptionComponent,
-    RxjsSubjectComponent
+    RxjsSubjectComponent,
+    RxjsBehaviourSubjectComponent
   ],
   imports: [
     BrowserModule,
