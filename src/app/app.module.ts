@@ -72,6 +72,7 @@ import { RxjsObservableComponent } from './rxjs-observable/rxjs-observable.compo
 import { RxjsSubscriptionComponent } from './rxjs-subscription/rxjs-subscription.component';
 import { RxjsSubjectComponent } from './rxjs-subject/rxjs-subject.component';
 import { RxjsBehaviourSubjectComponent } from './rxjs-behaviour-subject/rxjs-behaviour-subject.component';
+import { RxjsReplaySubjectComponent } from './rxjs-replay-subject/rxjs-replay-subject.component';
 
 @NgModule({
   declarations: [
@@ -132,7 +133,8 @@ import { RxjsBehaviourSubjectComponent } from './rxjs-behaviour-subject/rxjs-beh
     RxjsObservableComponent,
     RxjsSubscriptionComponent,
     RxjsSubjectComponent,
-    RxjsBehaviourSubjectComponent
+    RxjsBehaviourSubjectComponent,
+    RxjsReplaySubjectComponent
   ],
   imports: [
     BrowserModule,
