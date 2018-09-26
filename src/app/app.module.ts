@@ -69,6 +69,7 @@ import { RxjsWindowWhenComponent } from './rxjs-window-when/rxjs-window-when.com
 import { RxjsWithLatestFromComponent } from './rxjs-with-latest-from/rxjs-with-latest-from.component';
 import { RxjsZipComponent } from './rxjs-zip/rxjs-zip.component';
 import { RxjsObservableComponent } from './rxjs-observable/rxjs-observable.component';
+import { RxjsSubscriptionComponent } from './rxjs-subscription/rxjs-subscription.component';
 
 @NgModule({
   declarations: [
@@ -126,7 +127,8 @@ import { RxjsObservableComponent } from './rxjs-observable/rxjs-observable.compo
     RxjsWindowWhenComponent,
     RxjsWithLatestFromComponent,
     RxjsZipComponent,
-    RxjsObservableComponent
+    RxjsObservableComponent,
+    RxjsSubscriptionComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,17 @@
+<h4>
+    Subscription
+</h4>
+
+<p>
+    What is a Subscription? A Subscription is an object that represents a disposable resource, usually the execution of an Observable. A Subscription has one important method, unsubscribe, that takes no argument and just disposes the resource held by the subscription. In previous versions of RxJS, Subscription was called "Disposable".
+    <br>
+    <i>
+        A Subscription essentially just has an unsubscribe() function to release resources or cancel Observable executions.
+    </i>
+    <br>
+    Subscriptions can also be put together, so that a call to an unsubscribe() of one Subscription may unsubscribe multiple Subscriptions. You can do this by "adding" one subscription into another:
+    <br/>
+    <i>
+        Subscriptions also have a remove(otherSubscription) method, in order to undo the addition of a child Subscription.
+    </i>
+</p>
