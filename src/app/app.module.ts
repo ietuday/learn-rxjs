@@ -60,6 +60,8 @@ import { RxjsSingleComponent } from './rxjs-single/rxjs-single.component';
 import { RxjsSkipComponent } from './rxjs-skip/rxjs-skip.component';
 import { RxjsSkipWhileComponent } from './rxjs-skip-while/rxjs-skip-while.component';
 import { RxjsStartWithComponent } from './rxjs-start-with/rxjs-start-with.component';
+import { RxjsSwitchMapComponent } from './rxjs-switch-map/rxjs-switch-map.component';
+import { RxjsWindowComponent } from './rxjs-window/rxjs-window.component';
 
 @NgModule({
   declarations: [
@@ -108,7 +110,9 @@ import { RxjsStartWithComponent } from './rxjs-start-with/rxjs-start-with.compon
     RxjsSingleComponent,
     RxjsSkipComponent,
     RxjsSkipWhileComponent,
-    RxjsStartWithComponent
+    RxjsStartWithComponent,
+    RxjsSwitchMapComponent,
+    RxjsWindowComponent
   ],
   imports: [
     BrowserModule,
