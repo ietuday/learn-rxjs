@@ -73,6 +73,7 @@ import { RxjsSubscriptionComponent } from './rxjs-subscription/rxjs-subscription
 import { RxjsSubjectComponent } from './rxjs-subject/rxjs-subject.component';
 import { RxjsBehaviourSubjectComponent } from './rxjs-behaviour-subject/rxjs-behaviour-subject.component';
 import { RxjsReplaySubjectComponent } from './rxjs-replay-subject/rxjs-replay-subject.component';
+import { RxjsAsyncSubjectComponent } from './rxjs-async-subject/rxjs-async-subject.component';
 
 @NgModule({
   declarations: [
@@ -134,7 +135,8 @@ import { RxjsReplaySubjectComponent } from './rxjs-replay-subject/rxjs-replay-su
     RxjsSubscriptionComponent,
     RxjsSubjectComponent,
     RxjsBehaviourSubjectComponent,
-    RxjsReplaySubjectComponent
+    RxjsReplaySubjectComponent,
+    RxjsAsyncSubjectComponent
   ],
   imports: [
     BrowserModule,
