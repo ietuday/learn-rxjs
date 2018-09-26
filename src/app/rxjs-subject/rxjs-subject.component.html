@@ -1,0 +1,52 @@
+<h4>Subject</h4>
+<p>
+  What is a Subject? An RxJS Subject is a special type of Observable that allows values to be multicasted to many
+  Observers. While plain Observables are unicast (each subscribed Observer owns an independent execution of the
+  Observable), Subjects are multicast.
+  <br>
+  <i>
+    A Subject is like an Observable, but can multicast to many Observers. Subjects are like EventEmitters: they
+    maintain a registry of many listeners.
+  </i>
+  <br />
+  Every Subject is an Observable. Given a Subject, you can subscribe to it, providing an Observer, which will start
+  receiving values normally. From the perspective of the Observer, it cannot tell whether the Observable execution is
+  coming from a plain unicast Observable or a Subject.
+  <br />
+  Internally to the Subject, subscribe does not invoke a new execution that delivers values. It simply registers the
+  given Observer in a list of Observers, similarly to how addListener usually works in other libraries and languages.
+  <br />
+  Every Subject is an Observer. It is an object with the methods next(v), error(e), and complete(). To feed a new value
+  to the Subject, just call next(theValue), and it will be multicasted to the Observers registered to listen to the
+  Subject.
+  <br>
+  With the approach above, we essentially just converted a unicast Observable execution to multicast, through the
+  Subject. This demonstrates how Subjects are the only way of making any Observable execution be shared to multiple
+  Observers.
+  <br />
+  There are also a few specializations of the Subject type: BehaviorSubject, ReplaySubject, and AsyncSubject.
+  <br/>
+  <strong>Multicasted Observables</strong>
+  <br/>
+
+      A "multicasted Observable" passes notifications through a Subject which may have many subscribers, whereas a plain "unicast Observable" only sends notifications to a single Observer.
+      <br>
+      <i>
+          A multicasted Observable uses a Subject under the hood to make multiple Observers see the same Observable execution.
+      </i>
+      <br><br><br>
+  <strong>Reference counting</strong>
+  Calling connect() manually and handling the Subscription is often cumbersome. Usually, we want to automatically connect when the first Observer arrives, and automatically cancel the shared execution when the last Observer unsubscribes.
+  <br/><br/>
+  <i>
+      If we wish to avoid explicit calls to connect(), we can use ConnectableObservable's refCount() method (reference counting), which returns an Observable that keeps track of how many subscribers it has. When the number of subscribers increases from 0 to 1, it will call connect() for us, which starts the shared execution. Only when the number of subscribers decreases from 1 to 0 will it be fully unsubscribed, stopping further execution.
+  </i>
+  <br/><br/>
+  <i>
+      refCount makes the multicasted Observable automatically start executing when the first subscriber arrives, and stop executing when the last subscriber leaves.
+  </i>
+  <br/><br/>
+  <strong>
+      The refCount() method only exists on ConnectableObservable, and it returns an Observable, not another ConnectableObservable.
+  </strong>
+</p>

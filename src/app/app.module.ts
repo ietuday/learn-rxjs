@@ -70,6 +70,7 @@ import { RxjsWithLatestFromComponent } from './rxjs-with-latest-from/rxjs-with-l
 import { RxjsZipComponent } from './rxjs-zip/rxjs-zip.component';
 import { RxjsObservableComponent } from './rxjs-observable/rxjs-observable.component';
 import { RxjsSubscriptionComponent } from './rxjs-subscription/rxjs-subscription.component';
+import { RxjsSubjectComponent } from './rxjs-subject/rxjs-subject.component';
 
 @NgModule({
   declarations: [
@@ -128,7 +129,8 @@ import { RxjsSubscriptionComponent } from './rxjs-subscription/rxjs-subscription
     RxjsWithLatestFromComponent,
     RxjsZipComponent,
     RxjsObservableComponent,
-    RxjsSubscriptionComponent
+    RxjsSubscriptionComponent,
+    RxjsSubjectComponent
   ],
   imports: [
     BrowserModule,
