@@ -67,6 +67,8 @@ import { RxjsWindowTimeComponent } from './rxjs-window-time/rxjs-window-time.com
 import { RxjsWindowToggleComponent } from './rxjs-window-toggle/rxjs-window-toggle.component';
 import { RxjsWindowWhenComponent } from './rxjs-window-when/rxjs-window-when.component';
 import { RxjsWithLatestFromComponent } from './rxjs-with-latest-from/rxjs-with-latest-from.component';
+import { RxjsZipComponent } from './rxjs-zip/rxjs-zip.component';
+import { RxjsObservableComponent } from './rxjs-observable/rxjs-observable.component';
 
 @NgModule({
   declarations: [
@@ -122,7 +124,9 @@ import { RxjsWithLatestFromComponent } from './rxjs-with-latest-from/rxjs-with-l
     RxjsWindowTimeComponent,
     RxjsWindowToggleComponent,
     RxjsWindowWhenComponent,
-    RxjsWithLatestFromComponent
+    RxjsWithLatestFromComponent,
+    RxjsZipComponent,
+    RxjsObservableComponent
   ],
   imports: [
     BrowserModule,
