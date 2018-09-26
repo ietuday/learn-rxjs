@@ -1,0 +1,15 @@
+It really comes down to behavior and semantics. With a
+
+Subject - a subscriber will only get published values that were emitted after the subscription. Ask yourself, is that what you want? Does the subscriber need to know anything about previous values? If not, then you can use this, otherwise choose one of the others. For example, with component-to-component communication. Say you have a component that publishes events for other components on a button click. You can use a service with a subject to communicate.
+
+BehaviorSubject - the last value is cached. An subscriber will get the latest value upon initial subscription. The semantics for this subject is to represent a value that changes over time. For example a logged in user. The initial user might be an anonymous user. But once a user logs in, then the new value is the authenticated user state.
+
+The BehaviorSubject is initialized with an initial value. This is sometimes important to coding preference. Say for instance you initialize it with a null. Then in your subscription, you need to do a null check. Maybe OK, or maybe annoying.
+
+ReplaySubject - it can cache up to a specified number of emissions. Any subscribers will get all the cached values upon subscription. When would you need this behavior? Honestly I have not had need for such behavior, except for the following case:
+
+If you initialize a ReplaySubject with a buffer size of 1, then it actually behaves just like a BehaviorSubject. The last value is always cached, so it acts like a value changing over time. With this, there is no need for a null check like in the case of the BehaviorSubject initialized with a null, because no value is ever emitted to the subscriber until the first publishing.
+
+So it really comes down the behavior you are expecting, as for which one to use. Most the time you will probably want to use a BehaviorSubject because what you really want to represent is that "value over time" semantic. But I personally don't see anything wrong with the substitution of ReplaySubject initialized with 1.
+
+What you want to avoid is using the vanilla Subject when what you really need is some caching behavior. Take for example you are writing a routing guard or a resolve. You fetch some data in that guard and set it in a service Subject. Then in the routed component you subscribe to the service subject to try to get that value that was emitted in the guard. OOPs. where's the value? It was already emitted, DUH. Use a "caching" subject!
