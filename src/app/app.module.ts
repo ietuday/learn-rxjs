@@ -59,6 +59,7 @@ import { RxjsShareComponent } from './rxjs-share/rxjs-share.component';
 import { RxjsSingleComponent } from './rxjs-single/rxjs-single.component';
 import { RxjsSkipComponent } from './rxjs-skip/rxjs-skip.component';
 import { RxjsSkipWhileComponent } from './rxjs-skip-while/rxjs-skip-while.component';
+import { RxjsStartWithComponent } from './rxjs-start-with/rxjs-start-with.component';
 
 @NgModule({
   declarations: [
@@ -106,7 +107,8 @@ import { RxjsSkipWhileComponent } from './rxjs-skip-while/rxjs-skip-while.compon
     RxjsShareComponent,
     RxjsSingleComponent,
     RxjsSkipComponent,
-    RxjsSkipWhileComponent
+    RxjsSkipWhileComponent,
+    RxjsStartWithComponent
   ],
   imports: [
     BrowserModule,
