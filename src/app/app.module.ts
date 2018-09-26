@@ -62,6 +62,7 @@ import { RxjsSkipWhileComponent } from './rxjs-skip-while/rxjs-skip-while.compon
 import { RxjsStartWithComponent } from './rxjs-start-with/rxjs-start-with.component';
 import { RxjsSwitchMapComponent } from './rxjs-switch-map/rxjs-switch-map.component';
 import { RxjsWindowComponent } from './rxjs-window/rxjs-window.component';
+import { RxjsWindowCountComponent } from './rxjs-window-count/rxjs-window-count.component';
 
 @NgModule({
   declarations: [
@@ -112,7 +113,8 @@ import { RxjsWindowComponent } from './rxjs-window/rxjs-window.component';
     RxjsSkipWhileComponent,
     RxjsStartWithComponent,
     RxjsSwitchMapComponent,
-    RxjsWindowComponent
+    RxjsWindowComponent,
+    RxjsWindowCountComponent
   ],
   imports: [
     BrowserModule,
