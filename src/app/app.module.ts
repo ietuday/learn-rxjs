@@ -64,6 +64,9 @@ import { RxjsSwitchMapComponent } from './rxjs-switch-map/rxjs-switch-map.compon
 import { RxjsWindowComponent } from './rxjs-window/rxjs-window.component';
 import { RxjsWindowCountComponent } from './rxjs-window-count/rxjs-window-count.component';
 import { RxjsWindowTimeComponent } from './rxjs-window-time/rxjs-window-time.component';
+import { RxjsWindowToggleComponent } from './rxjs-window-toggle/rxjs-window-toggle.component';
+import { RxjsWindowWhenComponent } from './rxjs-window-when/rxjs-window-when.component';
+import { RxjsWithLatestFromComponent } from './rxjs-with-latest-from/rxjs-with-latest-from.component';
 
 @NgModule({
   declarations: [
@@ -116,7 +119,10 @@ import { RxjsWindowTimeComponent } from './rxjs-window-time/rxjs-window-time.com
     RxjsSwitchMapComponent,
     RxjsWindowComponent,
     RxjsWindowCountComponent,
-    RxjsWindowTimeComponent
+    RxjsWindowTimeComponent,
+    RxjsWindowToggleComponent,
+    RxjsWindowWhenComponent,
+    RxjsWithLatestFromComponent
   ],
   imports: [
     BrowserModule,
