@@ -57,6 +57,8 @@ import { RxjsSampleComponent } from './rxjs-sample/rxjs-sample.component';
 import { RxjsScanComponent } from './rxjs-scan/rxjs-scan.component';
 import { RxjsShareComponent } from './rxjs-share/rxjs-share.component';
 import { RxjsSingleComponent } from './rxjs-single/rxjs-single.component';
+import { RxjsSkipComponent } from './rxjs-skip/rxjs-skip.component';
+import { RxjsSkipWhileComponent } from './rxjs-skip-while/rxjs-skip-while.component';
 
 @NgModule({
   declarations: [
@@ -102,7 +104,9 @@ import { RxjsSingleComponent } from './rxjs-single/rxjs-single.component';
     RxjsSampleComponent,
     RxjsScanComponent,
     RxjsShareComponent,
-    RxjsSingleComponent
+    RxjsSingleComponent,
+    RxjsSkipComponent,
+    RxjsSkipWhileComponent
   ],
   imports: [
     BrowserModule,
