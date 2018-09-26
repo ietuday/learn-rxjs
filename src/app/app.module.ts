@@ -55,6 +55,7 @@ import { RxjsRetryComponent } from './rxjs-retry/rxjs-retry.component';
 import { RxjsRetryWhenComponent } from './rxjs-retry-when/rxjs-retry-when.component';
 import { RxjsSampleComponent } from './rxjs-sample/rxjs-sample.component';
 import { RxjsScanComponent } from './rxjs-scan/rxjs-scan.component';
+import { RxjsShareComponent } from './rxjs-share/rxjs-share.component';
 
 @NgModule({
   declarations: [
@@ -98,7 +99,8 @@ import { RxjsScanComponent } from './rxjs-scan/rxjs-scan.component';
     RxjsRetryComponent,
     RxjsRetryWhenComponent,
     RxjsSampleComponent,
-    RxjsScanComponent
+    RxjsScanComponent,
+    RxjsShareComponent
   ],
   imports: [
     BrowserModule,

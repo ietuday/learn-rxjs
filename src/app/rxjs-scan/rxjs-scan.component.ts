@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Subject, BehaviorSubject } from 'rxjs';
-import { startWith, scan } from 'rxjs/operators';
+import { Subject, BehaviorSubject, interval } from 'rxjs';
+import { startWith, scan, map, distinctUntilChanged } from 'rxjs/operators';
 
 @Component({
   selector: 'app-rxjs-scan',
@@ -14,6 +14,7 @@ export class RxjsScanComponent implements OnInit {
   ngOnInit() {
     this.scan();
     this.scanObject();
+    this.randomArray();
   }
 
   scan() {
@@ -49,6 +50,17 @@ export class RxjsScanComponent implements OnInit {
     subject.next({ favoriteLanguage: 'JavaScript' });
 
 
+  }
+
+  randomArray() {
+    // Accumulate values in an array, emit random values from this array.
+    const scanObs = interval(1000)
+      .pipe(
+        scan((a, c) => [...a, c], []),
+        map(r => r[Math.floor(Math.random() * r.length)]),
+        distinctUntilChanged()
+      )
+      .subscribe(console.log);
   }
 
 }
