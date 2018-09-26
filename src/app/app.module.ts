@@ -63,6 +63,7 @@ import { RxjsStartWithComponent } from './rxjs-start-with/rxjs-start-with.compon
 import { RxjsSwitchMapComponent } from './rxjs-switch-map/rxjs-switch-map.component';
 import { RxjsWindowComponent } from './rxjs-window/rxjs-window.component';
 import { RxjsWindowCountComponent } from './rxjs-window-count/rxjs-window-count.component';
+import { RxjsWindowTimeComponent } from './rxjs-window-time/rxjs-window-time.component';
 
 @NgModule({
   declarations: [
@@ -114,7 +115,8 @@ import { RxjsWindowCountComponent } from './rxjs-window-count/rxjs-window-count.
     RxjsStartWithComponent,
     RxjsSwitchMapComponent,
     RxjsWindowComponent,
-    RxjsWindowCountComponent
+    RxjsWindowCountComponent,
+    RxjsWindowTimeComponent
   ],
   imports: [
     BrowserModule,
